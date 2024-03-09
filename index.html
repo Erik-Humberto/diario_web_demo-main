@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=index.php">
-    <title>Redirección</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="manifest" href="./manifest.json">
+
+    <title>El desinformante</title>
+    <script type="text/javascript">
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
+</script>
 </head>
 <body>
-    Si no eres redirigido automáticamente, sigue este <a href="index.php">enlace</a>.
+hola
 </body>
 </html>
