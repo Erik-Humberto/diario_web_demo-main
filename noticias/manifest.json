@@ -6,10 +6,10 @@
     "display": "fullscreen",
     "orientation": "portrait",
     "scope": "./",
-    "start_url": "./",
+    "start_url": "./noticias/index.php",
     "icons": [
         {
-            "src": "noticias/imagen_icono.png",
+            "src": "./imagen_icono.png",
             "type": "image/png",
             "sizes": "512x512"
         }
