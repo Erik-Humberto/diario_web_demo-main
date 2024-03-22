@@ -11,6 +11,21 @@ if (!isset($_SESSION['usuario_logueado'])) {
 }
 ?>
 
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "ac1b55ca-738a-455e-962d-89738b59ca47",
+      safari_web_id: "web.onesignal.auto.283a79e5-74a1-4b9f-8067-e75dbf426ba4",
+      notifyButton: {
+        enable: true,
+      },
+      allowLocalhostAsSecureOrigin: true,
+    });
+  });
+</script>
+
 <!-- MENÚ NAVBAR PARA TODO EL SITIO -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
     <div class="container">
@@ -86,3 +101,22 @@ if (!isset($_SESSION['usuario_logueado'])) {
         </div>
     </div>
 </nav>
+<!-- Agrega este script en la parte inferior de tu archivo HTML, justo antes del cierre del cuerpo -->
+<script>
+    // // Manejar el clic en los enlaces de navegación
+    // document.querySelectorAll('.nav-link').forEach(link => {
+    //     link.addEventListener('click', function(event) {
+    //         event.preventDefault(); // Evitar el comportamiento de navegación predeterminado
+    //         const url = this.getAttribute('href'); // Obtener la URL del enlace
+
+    //         // Cargar el contenido dinámicamente usando fetch o cualquier otra técnica que prefieras
+    //         fetch(url)
+    //             .then(response => response.text())
+    //             .then(html => {
+    //                 document.getElementById('content').innerHTML = html; // Actualizar el contenido de la página
+    //             })
+    //             .catch(error => console.error('Error:', error));
+    //     });
+    // });
+</script>
+

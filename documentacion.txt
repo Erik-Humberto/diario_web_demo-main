@@ -1,0 +1,36 @@
+-Elaborar app shells de PWA.
+
+se creo un script service worker para llamar el archivo sw.js para almacenar el cache de unos archivos 
+
+<script type="text/javascript">
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
+</script>
+
+-Desarrollar contenidos de aplicaciones web progresivas con CSR y SSR.
+
+para el SSR se agrego el archivo o herramienta manifest.json 
+para el CSR se agrego el archivo o herramienta Workbox.js
+
+
+-Programar PWAs con service workers y notificaciones push.
+se programo con oneSignal esta es la documentacion esta en esta pagina Sebaaas ! de alli me base 
+
+https://documentation.onesignal.com/docs/onesignal-service-worker-faq
+
+
+-Programar PWAs con acceso a características nativas de los dispositivos.
+se agrego un codigo para dar permisos de prender la camara
+
+-Programar funciones offline en PWA.
+se agrego el script para checar la funcion offline 
+
+
+- Desarrollar pruebas en aplicaciones web progresivas con herramientas de software.
+
+jasmin
+
+- Realizar la publicación de aplicaciones web progresivas.
+publicar la aplicacion ya sea en un host o en un servidor 
+
